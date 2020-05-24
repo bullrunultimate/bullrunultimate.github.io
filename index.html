@@ -116,10 +116,10 @@ var end = new Date('05/25/2020 5:00 PM');
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById('countdown').innerHTML = days + ' dias, ';
-        document.getElementById('countdown').innerHTML += hours + ' horas, ';
-        document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
-        document.getElementById('countdown').innerHTML += seconds + ' segundos';
+        document.getElementById('countdown').innerHTML = days + ' days, ';
+        document.getElementById('countdown').innerHTML += hours + ' hours, ';
+        document.getElementById('countdown').innerHTML += minutes + ' minutes and ';
+        document.getElementById('countdown').innerHTML += seconds + ' seconds';
     }
 
     timer = setInterval(showRemaining, 1000);
